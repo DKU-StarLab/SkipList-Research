@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/iostats_context_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/iostats_context_test[1]_tests.cmake")
+else()
+  add_test(iostats_context_test_NOT_BUILT iostats_context_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/compaction_picker_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/compaction_picker_test[1]_tests.cmake")
+else()
+  add_test(compaction_picker_test_NOT_BUILT compaction_picker_test_NOT_BUILT)
+endif()

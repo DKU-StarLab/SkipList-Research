@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/block_based_table_reader_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/block_based_table_reader_test[1]_tests.cmake")
+else()
+  add_test(block_based_table_reader_test_NOT_BUILT block_based_table_reader_test_NOT_BUILT)
+endif()

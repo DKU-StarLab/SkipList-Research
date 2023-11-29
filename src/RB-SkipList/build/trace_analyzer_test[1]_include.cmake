@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/trace_analyzer_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/LA-SkipList/build/trace_analyzer_test[1]_tests.cmake")
+else()
+  add_test(trace_analyzer_test_NOT_BUILT trace_analyzer_test_NOT_BUILT)
+endif()
