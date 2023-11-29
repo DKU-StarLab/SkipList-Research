@@ -15,4 +15,6 @@ You can check the research topics in progress in the items below.
 - **Arrayed SkipList**
   - 
 
-Detailed information can be found in src.
+**CSL** and **RB-SkipList** modified the skip list code used in **RocksDB**.
+
+Detailed information (functions, installation) can be found in src.
