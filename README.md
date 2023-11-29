@@ -13,7 +13,7 @@ You can check the research topics in progress in the items below.
   - RB-SkipList (Red Black SkipList) has an RB-Tree structure in the upper area and a skip list structure in the lower area. In the upper area, RB-Tree, only the nodes at the highest height of the skip list are managed. Conventionally, insertion and lookup operations start from the head node at the highest height, but RB-SkipList searches from the root node of the tree, which is the upper area. Quickly access the appropriate location in the skip list through the tree structure and then proceed with the search in the same way as the existing skip list.
 
 - **Arrayed SkipList**
-  - ASL is a modified skip list structure consisting of multiple linked lists. Existing linked list nodes consist of a single node, but instead of a single node, multiple nodes are combined into an array. Construct a skip list using a list consisting of an array. The array size used in this study was 4.
+  - ASL (Arrayed SkipList) is a modified skip list structure consisting of multiple linked lists. Existing linked list nodes consist of a single node, but instead of a single node, multiple nodes are combined into an array. Construct a skip list using a list consisting of an array. The array size used in this study was 4.
 
 **CSL** and **RB-SkipList** modified the skip list code used in **RocksDB**.
 
