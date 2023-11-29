@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/error_handler_fs_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/error_handler_fs_test[1]_tests.cmake")
+else()
+  add_test(error_handler_fs_test_NOT_BUILT error_handler_fs_test_NOT_BUILT)
+endif()

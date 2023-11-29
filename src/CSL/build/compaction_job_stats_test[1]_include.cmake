@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/compaction_job_stats_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/compaction_job_stats_test[1]_tests.cmake")
+else()
+  add_test(compaction_job_stats_test_NOT_BUILT compaction_job_stats_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/data_block_hash_index_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/data_block_hash_index_test[1]_tests.cmake")
+else()
+  add_test(data_block_hash_index_test_NOT_BUILT data_block_hash_index_test_NOT_BUILT)
+endif()

@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/memtable_list_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/memtable_list_test[1]_tests.cmake")
+else()
+  add_test(memtable_list_test_NOT_BUILT memtable_list_test_NOT_BUILT)
+endif()

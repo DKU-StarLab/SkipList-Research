@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/version_builder_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/version_builder_test[1]_tests.cmake")
+else()
+  add_test(version_builder_test_NOT_BUILT version_builder_test_NOT_BUILT)
+endif()

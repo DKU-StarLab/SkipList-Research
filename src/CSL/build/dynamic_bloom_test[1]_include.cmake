@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/dynamic_bloom_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/dynamic_bloom_test[1]_tests.cmake")
+else()
+  add_test(dynamic_bloom_test_NOT_BUILT dynamic_bloom_test_NOT_BUILT)
+endif()

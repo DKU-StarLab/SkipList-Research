@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/thread_local_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/thread_local_test[1]_tests.cmake")
+else()
+  add_test(thread_local_test_NOT_BUILT thread_local_test_NOT_BUILT)
+endif()

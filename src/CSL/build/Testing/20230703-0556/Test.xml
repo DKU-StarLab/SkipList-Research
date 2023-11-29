@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="(empty)"
+	BuildStamp="20230703-0556-Experimental"
+	Name="(empty)"
+	Generator="ctest-3.16.3"
+	CompilerName=""
+	CompilerVersion=""
+	OSName="Linux"
+	Hostname="shin96"
+	OSRelease="5.15.0-71-generic"
+	OSVersion="#78~20.04.1-Ubuntu SMP Wed Apr 19 11:26:48 UTC 2023"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="GenuineIntel"
+	VendorID="Intel Corporation"
+	FamilyID="6"
+	ModelID="151"
+	ProcessorCacheSize="25600"
+	NumberOfLogicalCPU="20"
+	NumberOfPhysicalCPU="12"
+	TotalVirtualMemory="2047"
+	TotalPhysicalMemory="31845"
+	LogicalProcessorsPerPhysical="1"
+	ProcessorClockFrequency="2100"
+	>
+	<Testing>
+		<StartDateTime>Jul 03 14:56 KST</StartDateTime>
+		<StartTestTime>1688363783</StartTestTime>
+		<TestList/>
+		<EndDateTime>Jul 03 14:56 KST</EndDateTime>
+		<EndTestTime>1688363783</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

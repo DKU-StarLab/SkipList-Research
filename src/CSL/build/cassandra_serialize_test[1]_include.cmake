@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/cassandra_serialize_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/cassandra_serialize_test[1]_tests.cmake")
+else()
+  add_test(cassandra_serialize_test_NOT_BUILT cassandra_serialize_test_NOT_BUILT)
+endif()

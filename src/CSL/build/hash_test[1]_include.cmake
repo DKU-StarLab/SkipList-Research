@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/hash_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/hash_test[1]_tests.cmake")
+else()
+  add_test(hash_test_NOT_BUILT hash_test_NOT_BUILT)
+endif()

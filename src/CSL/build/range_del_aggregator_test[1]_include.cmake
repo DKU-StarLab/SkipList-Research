@@ -1,0 +1,5 @@
+if(EXISTS "/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/range_del_aggregator_test[1]_tests.cmake")
+  include("/home/shin96/workspace_starlab/co-workspace/Compact-SkipList/build/range_del_aggregator_test[1]_tests.cmake")
+else()
+  add_test(range_del_aggregator_test_NOT_BUILT range_del_aggregator_test_NOT_BUILT)
+endif()

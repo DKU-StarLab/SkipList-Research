@@ -1,0 +1,2 @@
+/usr/bin/ar qc libtestharness.a  CMakeFiles/testharness.dir/test_util/mock_time_env.cc.o CMakeFiles/testharness.dir/test_util/secondary_cache_test_util.cc.o CMakeFiles/testharness.dir/test_util/testharness.cc.o
+/usr/bin/ranlib libtestharness.a
