@@ -6,18 +6,18 @@ Detailed information regarding settings is explained within each directory.
 
 - Compact SkipList
 
-  make skiplist_test
+    make skiplist_test
 
-  ./skiplist_test
+    ./skiplist_test
 
 - RB-SkipList
 
-  make skiplist_test
+    make skiplist_test
 
-  ./skiplist_test
+    ./skiplist_test
 
 - Arrayed SkipList
 
-  make
+    make
 
-  ./sl_test 1000 1000 0
+    ./sl_test 1000 1000 0
