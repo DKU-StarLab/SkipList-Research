@@ -19,11 +19,3 @@ Detailed information regarding settings is explained within each directory.
 
     ./skiplist_test
 ```
-
-- Arrayed SkipList
-
-```
-    make
-
-    ./sl_test 1000 1000 0
-```
