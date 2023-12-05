@@ -1,5 +1,31 @@
 # RB-SkipList
 
+## RB-SkipList Functions
+
+```C++
+
+  void Insert_RB(const Key& key); // Insert key into RB-SkipList
+
+  bool Contains_RB(const Key& key) const; // Lookup key from RB-SkipList
+
+  vool Contains_TreeSean(const Key& key, uint64_t scan_num) const; // Scan key from RB-SkipList
+
+```
+
+## RB-SkipList workload
+
+When using the workload, you must uncomment it and proceed.
+
+- SeqInsertAndLookupX : Sequential pattern and lookup non-existent key
+
+- SeqInsertAndLookupO : Sequential pattern and lookup existent key
+
+- UniRandInsertAndLookup : Uniform pattern
+
+- ZipRandInsertAndLookup : Zipfian pattern
+
+- YCSBWorkloadA~F : YCSB workload A to F
+
 ## RocksDB: A Persistent Key-Value Store for Flash and RAM Storage
 
 [![CircleCI Status](https://circleci.com/gh/facebook/rocksdb.svg?style=svg)](https://circleci.com/gh/facebook/rocksdb)
