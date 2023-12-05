@@ -1,6 +1,6 @@
 # Compact SkipList
 
-## RB-SkipList Functions
+## Compact-SkipList Functions
 
 ```C++
 
@@ -12,7 +12,7 @@
 
 ```
 
-## RB-SkipList workload
+## Compact-SkipList workload
 
 When using the workload, you must uncomment it and proceed.
 
