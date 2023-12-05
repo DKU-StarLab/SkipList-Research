@@ -1,5 +1,33 @@
 # Compact SkipList
 
+## RB-SkipList Functions
+
+```C++
+
+  void Insert_Buf(const Key& key); // Insert key into Compact-SkipList
+
+  bool Contains_Buf(const Key& key) const; // Lookup key from Compact-SkipList
+
+  vool Contains_Sean(const Key& key, uint64_t scan_num) const; // Scan key from Compact-SkipList
+
+```
+
+## RB-SkipList workload
+
+When using the workload, you must uncomment it and proceed.
+
+- SeqInsertAndLookupX : Sequential pattern and lookup non-existent key
+
+- SeqInsertAndLookupO : Sequential pattern and lookup existent key
+
+- UniRandInsertAndLookup : Uniform pattern
+
+- ZipRandInsertAndLookup : Zipfian pattern
+
+- YCSBWorkloadA~F : YCSB workload A to F
+
+### All codes are continuously being updated.
+
 ## RocksDB: A Persistent Key-Value Store for Flash and RAM Storage
 
 [![CircleCI Status](https://circleci.com/gh/facebook/rocksdb.svg?style=svg)](https://circleci.com/gh/facebook/rocksdb)
