@@ -8,7 +8,7 @@
 
   bool Contains_RB(const Key& key) const; // Lookup key from RB-SkipList
 
-  vool Contains_TreeSean(const Key& key, uint64_t scan_num) const; // Scan key from RB-SkipList
+  bool Contains_TreeSean(const Key& key, uint64_t scan_num) const; // Scan key from RB-SkipList
 
 ```
 
