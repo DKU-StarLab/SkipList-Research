@@ -6,7 +6,7 @@ CSL and RB-SkipList may require modifications in the code before proceeding with
 
 - In skiplist.h
 
-    -int32_t **max_height** : Set the maximum height of the skip list
+    - int32_t **max_height** : Set the maximum height of the skip list
 
 - In skiplist_test.cc
 
