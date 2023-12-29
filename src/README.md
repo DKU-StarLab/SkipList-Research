@@ -10,9 +10,9 @@ CSL and RB-SkipList may require modifications in the code before proceeding with
 
 - In skiplist_test.cc
 
-    - const int **N** : Number of write operations
+    - const int **N** : Number of write (insert) operations
 
-    - const int **R** : Number of read operations
+    - const int **R** : Number of read (lookup) operations
 
 
 Detailed information regarding settings is explained within each directory.
