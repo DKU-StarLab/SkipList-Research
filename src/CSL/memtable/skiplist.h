@@ -71,13 +71,6 @@ class SkipList {
   int GetMaxHeight_test() const { return kMaxHeight_; } 
   int GetHeight_now() const { return max_height_.load(std::memory_order_relaxed); }
 
-/*
-  void Insert_AVL(const Key& key); // AVL insert function - Signal.Jin
-  void Insert_Lift(const Key& key); // Dynamic Lifting insert function - Signal.Jin
-  void Insert_VH(const Key& key); // Select more node for tree node - Signal.Jin
-  void Batch_Insert(const Key& key); // For batch write - Signal.Jin
-  void Insert_Seq(const Key* key_); // Lead to sequential write - Signal.Jin
-*/
   uint64_t Estimate_Max() const; // Signal.Jin
 
   // Returns true iff an entry that compares equal to key is in the list.
