@@ -260,8 +260,7 @@ struct SkipList<Key, Comparator>::Node {
 
  private:
   // Array of length equal to the node height.  next_[0] is lowest level link.
-  std::atomic<Node*> next_[1];
-  std::atomic<Node*>** next_plus; // Signal.Jin
+  std::atomic<Node*> next_[0];
 };
 
 template<typename Key, class Comparator>
