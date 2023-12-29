@@ -604,7 +604,6 @@ TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern -
 TEST_F(SkipTest, ZipRandInsertAndLookup) { // Skiplist test for Random Pattern - Signal.Jin
   const int N = 1000000; // Write Count - Signal.Jin
   const int R = 1000000; // Read Count - Signal.Jin
-  //uint64_t scan_op = 500; // Scan Count - Signal.Jin
   Random rnd(5326);
   std::set<Key> keys;
   Arena arena;
@@ -613,16 +612,6 @@ TEST_F(SkipTest, ZipRandInsertAndLookup) { // Skiplist test for Random Pattern -
 
   // Init Zipfian Generator - Signal.Jin
   init_zipf_generator(0, N);
-
-  //FILE *fp_sk_test;
-  //fp_sk_test = fopen("./rbtree/default_zipf_4m.csv", "at");
-
-  //float *lat = (float *)malloc(sizeof(float)*R);
-  //uint64_t *zipf_val = (uint64_t *)malloc(sizeof(uint64_t)*R);
-
-  //for(int i = 0; i < R; i++) {
-  //  zipf_val[i] = nextValue() % N;
-  //} // Zipfian Key Pattern - Signal.Jin
 
   for (int i = 0; i < 64; i++) {
     printf("%lu ", nextValue() % 500);
@@ -638,20 +627,15 @@ TEST_F(SkipTest, ZipRandInsertAndLookup) { // Skiplist test for Random Pattern -
     }
   }
   auto w_end = Clock::now();
-  //int j = 0;
   printf("read\n");
   auto r_start = Clock::now();
   for (int i = 0; i < R; i++) {
     Key Zkey = (nextValue() % (R)) + 1;
-    //auto start_time = Clock::now();
     if (list.Contains_Buf(Zkey)) { // Maybe estimate time in here - Signal.Jin
       ASSERT_EQ(keys.count(Zkey), 1U);
     } else {
       ASSERT_EQ(keys.count(Zkey), 0U);
     }
-    //auto end_time = Clock::now();
-    //lat[j] = std::chrono::duration_cast<std::chrono::nanoseconds>(end_time - start_time).count() * 0.001;
-    //j++;
   }
   auto r_end = Clock::now();
 
@@ -660,25 +644,6 @@ TEST_F(SkipTest, ZipRandInsertAndLookup) { // Skiplist test for Random Pattern -
   w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
 
   printf("\nw=%.lf, r=%.lf\n", w_time, r_time);
-
-  //printf("Node = %lu\n", list.EstimateNode());
-  //list.Estimate_Max();
-  //printf("height = %d\n", list.GetHeight_now());
-  // float sum = 0;
-  // for(int i = 0; i < R; i++) {
-  //   sum += lat[i];
-  // }
-  // float avg = sum / R;
-
-  // printf("Avg [%d] = %lf\n", R, avg);
-
-  //for(int k = 0; k < R; k++) {
-    //fprintf(fp_sk_test, "%.2f\n", lat[k]);
-    //printf("%.2f\n", lat[k]);
-  //}
-  //fclose(fp_sk_test);
-  //free(zipf_val);
-  //free(lat);
 }
 */
 /*
