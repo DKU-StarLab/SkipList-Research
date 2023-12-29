@@ -538,9 +538,8 @@ TEST_F(SkipTest, YCSBWorkloadF) { // Skiplist test for Random Pattern - Signal.J
 */
 
 TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern - Signal.Jin
-  //const int N = 1000000; // Write Count - Signal.Jin
+  const int N = 1000000; // Write Count - Signal.Jin
   const int R = 1; // Read Count - Signal.Jin
-  //uint64_t scan_op = 100; // Scan Count - Signal.Jin
   Random rnd(5326);
   std::set<Key> keys;
   Arena arena;
@@ -549,7 +548,7 @@ TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern -
 
   std::random_device rd;
   std::mt19937 gen(rd());
-  std::uniform_int_distribution<int> distr(0, 500);
+  std::uniform_int_distribution<int> distr(0, N);
   
   float *lat = (float *)malloc(sizeof(float)*R);
 
