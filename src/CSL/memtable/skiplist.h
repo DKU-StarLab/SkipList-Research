@@ -272,14 +272,6 @@ SkipList<Key, Comparator>::NewNode(const Key& key, int height) {
 }
 
 template<typename Key, class Comparator>
-typename SkipList<Key, Comparator>::Node*
-SkipList<Key, Comparator>::NewNode_plus(const Key& key, int height) {
-  char* mem = allocator_->AllocateAligned(
-      sizeof(Node) + sizeof(std::atomic<Node*>) * (height - 1));
-  return new (mem) Node(key);
-}
-
-template<typename Key, class Comparator>
 inline SkipList<Key, Comparator>::Iterator::Iterator(const SkipList* list) {
   SetList(list);
 }
