@@ -8,7 +8,7 @@
 
   bool Contains_Buf(const Key& key) const; // Lookup key from Compact-SkipList
 
-  vool Contains_Sean(const Key& key, uint64_t scan_num) const; // Scan key from Compact-SkipList
+  vool Contains_Scan(const Key& key, uint64_t scan_num) const; // Scan key from Compact-SkipList
 
 ```
 
