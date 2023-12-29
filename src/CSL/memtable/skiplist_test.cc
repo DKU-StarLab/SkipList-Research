@@ -551,16 +551,7 @@ TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern -
   std::mt19937 gen(rd());
   std::uniform_int_distribution<int> distr(0, 500);
   
-  //FILE *fp_sk_test;
   float *lat = (float *)malloc(sizeof(float)*R);
-  //uint64_t *rnd_val = (uint64_t *)malloc(sizeof(uint64_t)*N);
-  //for(int i = 0; i < N; i++) {
-    //rnd_val[i] = rnd.Next() % N;
-  //  rnd_val[i] = distr(gen);
-  //} // Generate Random Key - Signal.Jin
-
-  //fp_sk_test = fopen("./rbtree/default_uni_4m.csv", "at");
-  //printf("\nBefore Insert\n");
 
   for (int i = 0; i < 64; i++) {
     //printf("%d ", distr(gen));
@@ -597,9 +588,6 @@ TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern -
   w_time = std::chrono::duration_cast<std::chrono::nanoseconds>(w_end - w_start).count() * 0.001;
   printf("\nW = %.lf, R = %.lf\n", w_time, r_time);
 
-  // Output height now  - zhao
-  //int height_now = list.GetHeight_now();
-  //printf("now %d \n",height_now);
 
   float sum = 0;
   for(int i = 0; i < R; i++) {
@@ -610,13 +598,7 @@ TEST_F(SkipTest, UniRandInsertAndLookup) { // Skiplist test for Random Pattern -
   int count = list.EstimateNode();
   printf("Node = %d\n", count);
 
-  //for(int k = 0; k < R; k++) {
-  //  fprintf(fp_sk_test, "%.2f\n", lat[k]);
-  //}
-
-  //fclose(fp_sk_test);
   free(lat);
-  //free(rnd_val);
 }
 
 /*
