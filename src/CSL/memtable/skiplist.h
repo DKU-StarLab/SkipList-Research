@@ -63,7 +63,6 @@ class SkipList {
   void Insert(const Key& key);
 
   void Insert_Buf(const Key& key); // Signal.Jin
-  void Insert_plus(const Key& key);
 
   unsigned int log2_for_power_of_2(unsigned int val);
 
@@ -215,10 +214,6 @@ struct SkipList<Key, Comparator>::Node {
   // Signal.Jin - Buf
   int array_size;
   Key *ptr;
-
-  // Signal.Jin - Plus
-  int *Nkey[1];
-  Key *keys[4];
 
   // Accessors/mutators for links.  Wrapped in methods so we can
   // add the appropriate barriers as necessary.
