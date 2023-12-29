@@ -76,8 +76,6 @@ class SkipList {
   // Returns true iff an entry that compares equal to key is in the list.
   bool Contains(const Key& key) const;
 
-  // Call a FindGreatorOrEqual_Cursor function - Signal.Jin
-  //bool Contains_Cursor(const Key& key) const;
 
   // Signal.Jin - Scan operation
   bool Contains_OriScan(const Key& key, uint64_t scan_num) const;
