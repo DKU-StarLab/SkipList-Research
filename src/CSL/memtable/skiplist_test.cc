@@ -613,10 +613,10 @@ TEST_F(SkipTest, ZipRandInsertAndLookup) { // Skiplist test for Random Pattern -
   // Init Zipfian Generator - Signal.Jin
   init_zipf_generator(0, N);
 
-  for (int i = 0; i < 64; i++) {
-    printf("%lu ", nextValue() % 500);
-  }
-  printf("\nEnd\n");
+  //for (int i = 0; i < 64; i++) {
+  //  printf("%lu ", nextValue() % 500);
+  //}
+  //printf("\nEnd\n");
 
   // Insert key Random pattern in skiplist
   auto w_start = Clock::now();
