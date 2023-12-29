@@ -361,12 +361,6 @@ bool SkipList<Key, Comparator>::KeyIsAfterNode(const Key& key, Node* n) const {
 }
 
 template<typename Key, class Comparator>
-bool SkipList<Key, Comparator>::KeyIsAfterNode_plus(const Key& key, Node* n, int level) const {
-  // nullptr n is considered infinite
-  return (n != nullptr) && (compare_(n->keys[level][0], key) < 0);
-}
-
-template<typename Key, class Comparator>
 typename SkipList<Key, Comparator>::Node* SkipList<Key, Comparator>::
   FindGreaterOrEqual(const Key& key) const {
   // Note: It looks like we could reduce duplication by implementing
